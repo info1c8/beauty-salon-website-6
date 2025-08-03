@@ -14,6 +14,15 @@ import Gallery from "./pages/Gallery";
 import Reviews from "./pages/Reviews";
 import Contacts from "./pages/Contacts";
 import Booking from "./pages/Booking";
+import Promotions from "./pages/Promotions";
+import Blog from "./pages/Blog";
+import Loyalty from "./pages/Loyalty";
+import Certificates from "./pages/Certificates";
+import Careers from "./pages/Careers";
+import Events from "./pages/Events";
+import FAQ from "./pages/FAQ";
+import Franchise from "./pages/Franchise";
+import Training from "./pages/Training";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -35,6 +44,15 @@ const App = () => (
           <Route path="/reviews" element={<Reviews />} />
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/booking" element={<Booking />} />
+          <Route path="/promotions" element={<Promotions />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/loyalty" element={<Loyalty />} />
+          <Route path="/certificates" element={<Certificates />} />
+          <Route path="/careers" element={<Careers />} />
+          <Route path="/events" element={<Events />} />
+          <Route path="/faq" element={<FAQ />} />
+          <Route path="/franchise" element={<Franchise />} />
+          <Route path="/training" element={<Training />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
